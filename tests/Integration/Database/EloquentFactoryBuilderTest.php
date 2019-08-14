@@ -3,6 +3,8 @@
 namespace Illuminate\Tests\Integration\Database;
 
 use Faker\Generator;
+use Illuminate\Database\Eloquent\Factory as EloquentFactory;
+use Illuminate\Database\Eloquent\Factory\StateManager;
 use Orchestra\Testbench\TestCase;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Eloquent\Model;
@@ -31,7 +33,7 @@ class EloquentFactoryBuilderTest extends TestCase
             'prefix' => '',
         ]);
 
-        $factory = new Factory($app->make(Generator::class));
+        $factory = new EloquentFactory($app->make(Generator::class), new StateManager());
 
         $factory->define(FactoryBuildableUser::class, function (Generator $faker) {
             return [
