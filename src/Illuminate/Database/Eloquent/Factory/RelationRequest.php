@@ -2,12 +2,12 @@
 
 namespace Illuminate\Database\Eloquent\Factory;
 
-use BadMethodCallException;
 use Closure;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\Relation;
+use BadMethodCallException;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Collection;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\Relation;
 
 class RelationRequest
 {
