@@ -4,8 +4,8 @@ namespace Illuminate\Database\Eloquent;
 
 use ArrayAccess;
 use Faker\Generator as Faker;
-use Illuminate\Database\Eloquent\Factory\StateManager;
 use Symfony\Component\Finder\Finder;
+use Illuminate\Database\Eloquent\Factory\StateManager;
 
 class Factory implements ArrayAccess
 {

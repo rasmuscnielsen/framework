@@ -3,16 +3,16 @@
 namespace Illuminate\Database\Eloquent;
 
 use Closure;
-use Faker\Generator as Faker;
-use Illuminate\Database\Eloquent\Factory\BuildsRelationships;
-use Illuminate\Database\Eloquent\Factory\NormalizesAttributes;
-use Illuminate\Database\Eloquent\Factory\PrototypesModels;
-use Illuminate\Database\Eloquent\Factory\RelationRequest;
-use Illuminate\Database\Eloquent\Factory\StateManager;
 use Illuminate\Support\Arr;
+use Faker\Generator as Faker;
+use InvalidArgumentException;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Traits\Macroable;
-use InvalidArgumentException;
+use Illuminate\Database\Eloquent\Factory\StateManager;
+use Illuminate\Database\Eloquent\Factory\RelationRequest;
+use Illuminate\Database\Eloquent\Factory\PrototypesModels;
+use Illuminate\Database\Eloquent\Factory\BuildsRelationships;
+use Illuminate\Database\Eloquent\Factory\NormalizesAttributes;
 
 class FactoryBuilder
 {
